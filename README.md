@@ -2,7 +2,11 @@
 `Scrapingtoolkit` is a collection of scripts I developed to scrape databases in the digital humanities. The scripts have been used for very specific purposes and chances are you will need to adapt them in order to obtain what you want. To adapt the code, feel free to fork this repository. 
 As of 10/01/2023, `Scrapingtoolkit` includes two folders:
  - `MIAscraper`
- - `Wikisource scraper` (coming soon)
+ - `Wikisource scraper`
+
+# Warning
+These scripts should be used in accordance with the rules defined in each website's robots.txt file.  
+While scraping copyrighted text is allowed in some countries for non-profit research or educational purposes, you should make sure this practice is compliant with local rules. 
 
 # MIAscraper
 `MIAscraper` is a Python script that requests data from the MIA database API and saves it in a CSV file.
