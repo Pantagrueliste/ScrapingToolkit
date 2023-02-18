@@ -52,4 +52,4 @@ Some books on Wikisource are structured differently and contain multiple chapter
 Contributions to `MIAscraper` and `WikiScraper` and are welcome! If you would like to contribute, please fork the repository and submit a pull request with your changes. You can also submit bug reports or feature requests by creating an issue in the repository.
 
 # License
-MIAscraper is licensed under the GNU General Public License v3.0. See the LICENSE file for more information.
+`Scrapingtoolkit` is licensed under the GNU General Public License v3.0. See the LICENSE file for more information.
