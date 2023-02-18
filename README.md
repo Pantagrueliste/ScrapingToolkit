@@ -1,7 +1,7 @@
 # Scrapingtoolkit 
 
 `Scrapingtoolkit` is a collection of scripts I developed to scrape databases in the digital humanities. The scripts have been used for very specific purposes and chances are you will need to adapt them in order to obtain what you want. To adapt the code, feel free to fork this repository. 
-As of 10/01/2023, `Scrapingtools` includes two folders:
+As of 10/01/2023, `Scrapingtoolkit` includes two folders:
  - `MIAscraper`
  - `Wikisource scraper` (coming soon)
 
