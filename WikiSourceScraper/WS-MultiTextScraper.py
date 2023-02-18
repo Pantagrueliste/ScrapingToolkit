@@ -2,12 +2,18 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-with open("links500.txt") as f:
+# load links file
+with open("links700-complete.txt") as f:
     urls = f.readlines()
 
-with open("results.txt", "w") as outfile:
+with open("results700.txt", "w") as outfile:
     for i, url in enumerate(urls):
         soup = BeautifulSoup(requests.get(url.strip()).text, 'html.parser')
+
+        # check if the URL leads to a multichapter book
+        index = soup.find("span", id="Indice")
+        if index:
+            continue
 
         # eliminate undesirable contents
         for tag in soup(['style']):
@@ -19,7 +25,6 @@ with open("results.txt", "w") as outfile:
         title = soup.find('h1', {'id': 'firstHeading'})
         if title is None:
             title = soup.find('div', class_=re.compile(r'testi\b'))
-
         content = soup.find('div', class_=re.compile(r'testi\b'))
 
         if title is not None:
