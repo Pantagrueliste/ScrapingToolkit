@@ -1,8 +1,9 @@
 # Scrapingtoolkit 
-`Scrapingtoolkit` is a collection of scripts I developed to scrape databases in the digital humanities. The scripts have been used for very specific purposes and chances are you will need to adapt them in order to obtain what you want. To adapt the code, feel free to fork this repository. 
+`Scrapingtoolkit` is a collection of scripts I developed to scrape databases in the digital humanities. The scripts have been used for very specific purposes and chances are you will need to adapt them in order to obtain what you want. Before you do so, I recommend you try the excellent [trafilatura](https://github.com/adbar/trafilatura). To adapt the code, feel free to fork this repository. 
 As of 10/01/2023, `Scrapingtoolkit` includes two folders:
  - `MIAscraper`
  - `Wikisource scraper`
+ - `Gutenberg scraper` 
 
 # Warning
 These scripts should be used in accordance with the rules defined in each website's robots.txt file.  
@@ -13,7 +14,7 @@ While scraping copyrighted text is allowed in some countries for non-profit rese
 
 ## Description
 ### The MIA Database
-The MIA database is a collaborative platform where scholars can share their photographs of documents found in the [State Archives of Florence](https://archiviodistatofirenze.cultura.gov.it/asfi/home), transcribe them and catrgorize them. MIA has been created by the [Medici Archive Project](https://www.medici.org), one of the oldest digital humanities projects still in existence. The depth and breadth of this database is truly impressive and its contents are growing everyday. 
+The MIA database is a collaborative platform where scholars can share their photographs of documents found in the [State Archives of Florence](https://archiviodistatofirenze.cultura.gov.it/asfi/home), transcribe them and categorize them. MIA has been created by the [Medici Archive Project](https://www.medici.org), one of the oldest digital humanities projects still in existence. The depth and breadth of this database is truly impressive and its contents are growing everyday.  
 It is highly recommended you familiarize with the database before attempting any scraping. Note that you also need to obtain credentials to access the database.  
 
 ### The Script 
@@ -38,7 +39,7 @@ python MIAscraper.py
 
 The script will make a request to the MIA API and write the extracted data to a CSV file named `results.csv`.
 
-## Wikisource Scraper (coming soon)
+## Wikisource Scraper
 `Wikisource scraper` is a collection of scripts aimed at scraping vast amounts of texts stored in Wikisource. The script was designed to help me create a large corpus of Italian texts for training purposes. To adapt the code, feel free to fork this repository. 
 
 As of 15/02/2023, Wikisource scraper contains 3 scripts:
@@ -51,6 +52,9 @@ As of 15/02/2023, Wikisource scraper contains 3 scripts:
 
 ### `MultiBookLinksExtractor`
 Some books on Wikisource are structured differently and contain multiple chapters. To help scraping each of these chapters, `MultiBookLinksExtractor` creates an additional list of links related to multi chapter books. Once this list is complete, you can add it the list created with `CreateLinksList`. This consolidated list of links will enable you to scrape all the contents of the category you initially chose.
+
+## `Gutenberg scraper`
+`Gutenberg scraper` enables you to download `.txt` versions of the books you want, while creating a `.csv` file with all the relevant information about your corpus (id, title, author, word count, etc). The books you want to download is defined in a `.json` file you can generate it using the [Gutendex](https://github.com/garethbjohnson/gutendex) web API. The advantage of this method, is that you can create ad-hoc lists, combining linguistic and chronological criteria. This is something that the search functionality of Gutenberg does not allow you to do, and which be particularly useful for scholars in the humanities.
 
 # Contributing
 Contributions to `MIAscraper` and `WikiScraper` and are welcome! If you would like to contribute, please fork the repository and submit a pull request with your changes. You can also submit bug reports or feature requests by creating an issue in the repository.
