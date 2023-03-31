@@ -57,7 +57,7 @@ Some books on Wikisource are structured differently and contain multiple chapter
 `Gutenberg scraper` enables you to download `.txt` versions of the books you want, while creating a `.csv` file with all the relevant information about your corpus (id, title, author, word count, etc). The books you want to download is defined in a `.json` file you can generate it using the [Gutendex](https://github.com/garethbjohnson/gutendex) web API. The advantage of this method, is that you can create ad-hoc lists, combining linguistic and chronological criteria. This is something that the search functionality of Gutenberg does not allow you to do, and which be particularly useful for scholars in the humanities.
 
 # Contributing
-Contributions to `MIAscraper` and `WikiScraper` and are welcome! If you would like to contribute, please fork the repository and submit a pull request with your changes. You can also submit bug reports or feature requests by creating an issue in the repository.
+Contributions to `MIAscraper`, `WikiScraper`, and `Gutenberg scraper` and are welcome! If you would like to contribute, please fork the repository and submit a pull request with your changes. You can also submit bug reports or feature requests by creating an issue in the repository.
 
 # License
 `Scrapingtoolkit` is licensed under the GNU General Public License v3.0. See the LICENSE file for more information.
