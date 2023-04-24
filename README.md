@@ -14,8 +14,8 @@ While scraping copyrighted text is allowed in some countries for non-profit rese
 
 ## Description
 ### The MIA Database
-The MIA database is a collaborative platform where scholars can share their photographs of documents found in the [State Archives of Florence](https://archiviodistatofirenze.cultura.gov.it/asfi/home), transcribe them and categorize them. MIA has been created by the [Medici Archive Project](https://www.medici.org), one of the oldest digital humanities projects still in existence. The depth and breadth of this database is truly impressive and its contents are growing everyday.  
-It is highly recommended you familiarize with the database before attempting any scraping. Note that you also need to obtain credentials to access the database.  
+The MIA database is a collaborative platform where scholars can share photographic facsimile of documents found in the [State Archives of Florence](https://archiviodistatofirenze.cultura.gov.it/asfi/home), transcribe them, and categorize them. MIA has been created by the [Medici Archive Project](https://www.medici.org), one of the oldest digital humanities projects still in existence. The depth and breadth of this database is truly impressive and its contents are growing everyday.  
+It is highly recommended you familiarize with the database before extracting any information. Note that you also need to obtain credentials to access the database.  
 
 ### The Script 
 `MIAscraper` makes a POST request to the MIA API, extracts specific data from the response, and writes the data to a CSV file. The script uses the requests and csv modules, as well as the json module to work with JSON data.
@@ -40,7 +40,7 @@ python MIAscraper.py
 The script will make a request to the MIA API and write the extracted data to a CSV file named `results.csv`.
 
 ## Wikisource Scraper
-`Wikisource scraper` is a collection of scripts aimed at scraping vast amounts of texts stored in Wikisource. The script was designed to help me create a large corpus of Italian texts for training purposes. To adapt the code, feel free to fork this repository. 
+`Wikisource scraper` is a collection of scripts aimed at scraping vast amounts of texts stored in Wikisource. The script was designed to help me create a large corpus of Italian texts for AI training purposes. To adapt the code, feel free to fork this repository. 
 
 As of 15/02/2023, Wikisource scraper contains 3 scripts:
 
