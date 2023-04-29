@@ -1,6 +1,6 @@
 # Scrapingtoolkit 
-`Scrapingtoolkit` is a collection of scripts I developed to scrape databases in the digital humanities. The scripts have been used for very specific purposes and chances are you will need to adapt them in order to obtain what you want. Before you do so, I recommend you try the excellent [trafilatura](https://github.com/adbar/trafilatura). To adapt the code, feel free to fork this repository. 
-As of 10/01/2023, `Scrapingtoolkit` includes two folders:
+`Scrapingtoolkit` is a collection of scripts I developed to scrape databases in the digital humanities. The scripts have been used for very specific purposes and chances are you will need to adapt them in order to obtain the desired output. Before you do so, I recommend you try the excellent [trafilatura](https://github.com/adbar/trafilatura). If you want to adapt the code, feel free to fork this repository.   
+As of 10/01/2023, `Scrapingtoolkit` includes three folders:
  - `MIAscraper`
  - `Wikisource scraper`
  - `Gutenberg scraper` 
